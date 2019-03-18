@@ -50,6 +50,7 @@
             <artifactId>oss-parent</artifactId>
             <version>9</version>
             <type>pom</type>
+            <scope>test</scope>
         </dependency>
 
     </dependencies>
