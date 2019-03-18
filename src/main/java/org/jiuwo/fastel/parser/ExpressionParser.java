@@ -46,6 +46,9 @@ public class ExpressionParser extends AbstractParser {
     public ExpressionNode parseEL() {
         while (currentIndex < elSize) {
             skipSpace();
+            if (currentIndex >= elSize) {
+                break;
+            }
             char c = Character.toLowerCase(elValue.charAt(currentIndex));
             if (c == CharConstant.CHAR_TWO_QUOTATION || c == CharConstant.CHAR_QUOTATION) {
                 String text = findString();

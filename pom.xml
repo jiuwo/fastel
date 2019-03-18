@@ -6,7 +6,7 @@
 
     <groupId>org.jiuwo</groupId>
     <artifactId>fastel</artifactId>
-    <version>1.0.5</version>
+    <version>1.0.6</version>
 
     <name>org.jiuwo:fastel</name>
     <description>快速的表达式解析器</description>
