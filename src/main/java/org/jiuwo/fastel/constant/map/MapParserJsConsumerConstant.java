@@ -27,61 +27,61 @@ public class MapParserJsConsumerConstant {
     private static Map<ExpressionEnum.JsToken, Function<JsExpressionFunction, Object>> mapParserJsConsumer() {
         Map<ExpressionEnum.JsToken, Function<JsExpressionFunction, Object>> map = new HashMap<>();
         map.put(ExpressionEnum.JsToken.ENCODE_URI,
-                (jsExpressionFunction) -> jsExpressionFunction.enOrDeCodeURI());
+                JsExpressionFunction::enOrDeCodeURI);
         map.put(ExpressionEnum.JsToken.DECODE_URI,
-                (jsExpressionFunction) -> jsExpressionFunction.enOrDeCodeURI());
+                JsExpressionFunction::enOrDeCodeURI);
         map.put(ExpressionEnum.JsToken.ENCODE_URI_COMPONENT,
-                (jsExpressionFunction) -> jsExpressionFunction.enOrDeCodeURI());
+                JsExpressionFunction::enOrDeCodeURI);
         map.put(ExpressionEnum.JsToken.DECODE_URI_COMPONENT,
-                (jsExpressionFunction) -> jsExpressionFunction.enOrDeCodeURI());
+                JsExpressionFunction::enOrDeCodeURI);
         map.put(ExpressionEnum.JsToken.PARSE_INT,
-                (jsExpressionFunction) -> jsExpressionFunction.parseInt());
+                JsExpressionFunction::parseInt);
         map.put(ExpressionEnum.JsToken.PARSE_FLOAT,
-                (jsExpressionFunction) -> jsExpressionFunction.parseFloat());
+                JsExpressionFunction::parseFloat);
         map.put(ExpressionEnum.JsToken.JSON_PARSE,
-                (jsExpressionFunction) -> jsExpressionFunction.parse());
+                JsExpressionFunction::parse);
         map.put(ExpressionEnum.JsToken.JSON_STRINGIFY,
-                (jsExpressionFunction) -> jsExpressionFunction.stringify());
+                JsExpressionFunction::stringify);
         map.put(ExpressionEnum.JsToken.IS_FINITE,
-                (jsExpressionFunction) -> jsExpressionFunction.parseIsFinite());
+                JsExpressionFunction::parseIsFinite);
         map.put(ExpressionEnum.JsToken.IS_NAN,
-                (jsExpressionFunction) -> jsExpressionFunction.parseIsNaN());
+                JsExpressionFunction::parseIsNaN);
         map.put(ExpressionEnum.JsToken.MATH_ABS,
-                (jsExpressionFunction) -> jsExpressionFunction.abs());
+                JsExpressionFunction::abs);
         map.put(ExpressionEnum.JsToken.MATH_ACOS,
-                (jsExpressionFunction) -> jsExpressionFunction.acos());
+                JsExpressionFunction::acos);
         map.put(ExpressionEnum.JsToken.MATH_ASIN,
-                (jsExpressionFunction) -> jsExpressionFunction.asin());
+                JsExpressionFunction::asin);
         map.put(ExpressionEnum.JsToken.MATH_ATAN,
-                (jsExpressionFunction) -> jsExpressionFunction.atan());
+                JsExpressionFunction::atan);
         map.put(ExpressionEnum.JsToken.MATH_ATAN_2,
-                (jsExpressionFunction) -> jsExpressionFunction.atan2());
+                JsExpressionFunction::atan2);
         map.put(ExpressionEnum.JsToken.MATH_CEIL,
-                (jsExpressionFunction) -> jsExpressionFunction.ceil());
+                JsExpressionFunction::ceil);
         map.put(ExpressionEnum.JsToken.MATH_COS,
-                (jsExpressionFunction) -> jsExpressionFunction.cos());
+                JsExpressionFunction::cos);
         map.put(ExpressionEnum.JsToken.MATH_EXP,
-                (jsExpressionFunction) -> jsExpressionFunction.exp());
+                JsExpressionFunction::exp);
         map.put(ExpressionEnum.JsToken.MATH_FLOOR,
-                (jsExpressionFunction) -> jsExpressionFunction.floor());
+                JsExpressionFunction::floor);
         map.put(ExpressionEnum.JsToken.MATH_LOG,
-                (jsExpressionFunction) -> jsExpressionFunction.log());
+                JsExpressionFunction::log);
         map.put(ExpressionEnum.JsToken.MATH_MAX,
-                (jsExpressionFunction) -> jsExpressionFunction.max());
+                JsExpressionFunction::max);
         map.put(ExpressionEnum.JsToken.MATH_MIN,
-                (jsExpressionFunction) -> jsExpressionFunction.min());
+                JsExpressionFunction::min);
         map.put(ExpressionEnum.JsToken.MATH_POW,
-                (jsExpressionFunction) -> jsExpressionFunction.pow());
+                JsExpressionFunction::pow);
         map.put(ExpressionEnum.JsToken.MATH_RANDOM,
-                (jsExpressionFunction) -> jsExpressionFunction.random());
+                JsExpressionFunction::random);
         map.put(ExpressionEnum.JsToken.MATH_ROUND,
-                (jsExpressionFunction) -> jsExpressionFunction.round());
+                JsExpressionFunction::round);
         map.put(ExpressionEnum.JsToken.MATH_SIN,
-                (jsExpressionFunction) -> jsExpressionFunction.sin());
+                JsExpressionFunction::sin);
         map.put(ExpressionEnum.JsToken.MATH_SQRT,
-                (jsExpressionFunction) -> jsExpressionFunction.sqrt());
+                JsExpressionFunction::sqrt);
         map.put(ExpressionEnum.JsToken.MATH_TAN,
-                (jsExpressionFunction) -> jsExpressionFunction.tan());
+                JsExpressionFunction::tan);
         return map;
     }
 }

@@ -33,17 +33,17 @@ public class MapStrategyLogicFunctionConstant {
          * MAP_LOGIC_FUNCTION
          */
         map.put(ExpressionEnum.Token.OP_GET_STATIC,
-                operationStrategyFunction -> operationStrategyFunction.evaluateOpGetStatic());
+                OperationStrategyFunction::evaluateOpGetStatic);
         map.put(OP_GET,
-                operationStrategyFunction -> operationStrategyFunction.evaluateOpGet());
+                OperationStrategyFunction::evaluateOpGet);
         map.put(ExpressionEnum.Token.OP_AND,
-                operationStrategyFunction -> operationStrategyFunction.evaluateOpAnd());
+                OperationStrategyFunction::evaluateOpAnd);
         map.put(ExpressionEnum.Token.OP_OR,
-                operationStrategyFunction -> operationStrategyFunction.evaluateOpOr());
+                OperationStrategyFunction::evaluateOpOr);
         map.put(ExpressionEnum.Token.OP_QUESTION_SELECT,
-                operationStrategyFunction -> operationStrategyFunction.evaluateOpQuestionSelect());
+                OperationStrategyFunction::evaluateOpQuestionSelect);
         map.put(ExpressionEnum.Token.OP_QUESTION,
-                operationStrategyFunction -> operationStrategyFunction.evaluateOpQuestion());
+                OperationStrategyFunction::evaluateOpQuestion);
         return map;
     }
 }

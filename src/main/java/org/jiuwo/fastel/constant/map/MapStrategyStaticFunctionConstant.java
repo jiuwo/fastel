@@ -33,17 +33,17 @@ public class MapStrategyStaticFunctionConstant {
          * MAP_STATIC_FUNCTION
          */
         map.put(ExpressionEnum.Token.VALUE_VAR,
-                operationStrategyFunction -> operationStrategyFunction.evaluateValueVar());
+                OperationStrategyFunction::evaluateValueVar);
         map.put(ExpressionEnum.Token.VALUE_CONSTANTS,
-                operationStrategyFunction -> operationStrategyFunction.evaluateValueConstants());
+                OperationStrategyFunction::evaluateValueConstants);
         map.put(ExpressionEnum.Token.VALUE_LIST,
-                operationStrategyFunction -> operationStrategyFunction.evaluateValueList());
+                OperationStrategyFunction::evaluateValueList);
         map.put(ExpressionEnum.Token.VALUE_MAP,
-                operationStrategyFunction -> operationStrategyFunction.evaluateValueMap());
+                OperationStrategyFunction::evaluateValueMap);
         map.put(OP_INVOKE,
-                operationStrategyFunction -> operationStrategyFunction.evaluateOpInvoke());
+                OperationStrategyFunction::evaluateOpInvoke);
         map.put(ExpressionEnum.Token.OP_INVOKE_WITH_STATIC_PARAM,
-                operationStrategyFunction -> operationStrategyFunction.evaluateOpInvoke());
+                OperationStrategyFunction::evaluateOpInvoke);
         return map;
     }
 }

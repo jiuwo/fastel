@@ -31,45 +31,45 @@ public class MapStrategyOperationFunctionConstant {
          * map
          */
         map.put(ExpressionEnum.Token.OP_NOT,
-                operationStrategyFunction -> operationStrategyFunction.evaluateOpNot());
+                OperationStrategyFunction::evaluateOpNot);
         map.put(ExpressionEnum.Token.OP_POS,
-                operationStrategyFunction -> operationStrategyFunction.evaluateOpPos());
+                OperationStrategyFunction::evaluateOpPos);
         map.put(ExpressionEnum.Token.OP_NEG,
-                operationStrategyFunction -> operationStrategyFunction.evaluateOpNeg());
+                OperationStrategyFunction::evaluateOpNeg);
         map.put(ExpressionEnum.Token.OP_ADD,
-                operationStrategyFunction -> operationStrategyFunction.evaluateOpAdd());
+                OperationStrategyFunction::evaluateOpAdd);
         map.put(ExpressionEnum.Token.OP_SUB,
-                operationStrategyFunction -> operationStrategyFunction.evaluateOpSub());
+                OperationStrategyFunction::evaluateOpSub);
         map.put(ExpressionEnum.Token.OP_MUL,
-                operationStrategyFunction -> operationStrategyFunction.evaluateOpMul());
+                OperationStrategyFunction::evaluateOpMul);
         map.put(ExpressionEnum.Token.OP_DIV,
-                operationStrategyFunction -> operationStrategyFunction.evaluateOpDiv());
+                OperationStrategyFunction::evaluateOpDiv);
         map.put(ExpressionEnum.Token.OP_MOD,
-                operationStrategyFunction -> operationStrategyFunction.evaluateOpMod());
+                OperationStrategyFunction::evaluateOpMod);
         map.put(ExpressionEnum.Token.OP_EQ_STRICT,
-                operationStrategyFunction -> operationStrategyFunction.evaluateOpEqStrict());
+                OperationStrategyFunction::evaluateOpEqStrict);
         map.put(ExpressionEnum.Token.OP_EQ,
-                operationStrategyFunction -> operationStrategyFunction.evaluateOpEq());
+                OperationStrategyFunction::evaluateOpEq);
         map.put(ExpressionEnum.Token.OP_GT,
-                operationStrategyFunction -> operationStrategyFunction.evaluateOpGlteq());
+                OperationStrategyFunction::evaluateOpGlteq);
         map.put(ExpressionEnum.Token.OP_GTEQ,
-                operationStrategyFunction -> operationStrategyFunction.evaluateOpGlteq());
+                OperationStrategyFunction::evaluateOpGlteq);
         map.put(ExpressionEnum.Token.OP_LT,
-                operationStrategyFunction -> operationStrategyFunction.evaluateOpGlteq());
+                OperationStrategyFunction::evaluateOpGlteq);
         map.put(ExpressionEnum.Token.OP_LTEQ,
-                operationStrategyFunction -> operationStrategyFunction.evaluateOpGlteq());
+                OperationStrategyFunction::evaluateOpGlteq);
         map.put(ExpressionEnum.Token.OP_JOIN,
-                operationStrategyFunction -> operationStrategyFunction.evaluateOpJoin());
+                OperationStrategyFunction::evaluateOpJoin);
         map.put(ExpressionEnum.Token.OP_PUT,
-                operationStrategyFunction -> operationStrategyFunction.evaluateOpPut());
+                OperationStrategyFunction::evaluateOpPut);
         map.put(ExpressionEnum.Token.OP_IN,
-                operationStrategyFunction -> operationStrategyFunction.evaluateOpIn());
+                OperationStrategyFunction::evaluateOpIn);
         map.put(ExpressionEnum.Token.DEFAULT,
-                operationStrategyFunction -> operationStrategyFunction.evaluateOpDefault());
+                OperationStrategyFunction::evaluateOpDefault);
         map.put(ExpressionEnum.Token.OP_NE,
-                operationStrategyFunction -> operationStrategyFunction.evaluateOpNe());
+                OperationStrategyFunction::evaluateOpNe);
         map.put(ExpressionEnum.Token.OP_NE_STRICT,
-                operationStrategyFunction -> operationStrategyFunction.evaluateOpNeStrict());
+                OperationStrategyFunction::evaluateOpNeStrict);
         return map;
     }
 }
