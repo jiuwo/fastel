@@ -2,6 +2,7 @@ package org.jiuwo.fastel.constant;
 
 /**
  * @author Steven Han
+ * 2021.08.14
  */
 public interface CalculateConstant {
     /**
