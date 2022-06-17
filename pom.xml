@@ -15,7 +15,7 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <lombok.version>1.18.2</lombok.version>
-        <fastjson.version>1.2.56</fastjson.version>
+        <fastjson.version>1.2.83</fastjson.version>
         <powermock.module.junit4.version>2.0.0</powermock.module.junit4.version>
         <powermock.api.mockito.common.version>1.7.4</powermock.api.mockito.common.version>
         <maven.compiler.plugin.version>3.3</maven.compiler.plugin.version>
